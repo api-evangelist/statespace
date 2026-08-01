@@ -1,8 +1,24 @@
 aid: statespace
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/statespace.png
 name: Statespace
-description: 'Statespace is a company surfaced as a portfolio company of bessemer-venture-partners, lux-capital
-  and added to the API Evangelist network as a stub for enrichment. Sector: ai-ml. This profile is a lead
-  awaiting the enrichment pipeline.'
+description: 'Statespace is the company behind Aimlabs (aimlabs.com, formerly statespace.gg),
+  the leading AI-powered aim-training platform for FPS gamers. Aimlabs delivers personalized
+  training tasks, real-time performance analytics, and game-specific tools, serving over
+  40 million players and operating as an official partner of Valorant and Rainbow Six
+  Siege. Statespace is venture-backed by Bessemer Venture Partners and Lux Capital. As
+  of this enrichment pass the company publishes a consumer web/desktop product but no
+  public developer API, SDK, or documentation surface.'
 url: https://raw.githubusercontent.com/api-evangelist/statespace/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -13,10 +29,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Ai Ml
+- Gaming
+- Esports
+- Aim Training
+- Analytics
+- Consumer
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,5 +45,20 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/statespace-domain-security.yml
 - type: Website
-  url: https://statespace.gg
+  url: https://aimlabs.com
+- type: Blog
+  url: https://aimlabs.com/articles/
+- type: PrivacyPolicy
+  url: https://aimlabs.com/privacy-policy
+- type: TermsOfService
+  url: https://aimlabs.com/terms-of-service
+- type: Login
+  url: https://aimlabs.com/account/info
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
